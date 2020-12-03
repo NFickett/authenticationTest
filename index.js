@@ -61,7 +61,7 @@ function loadNextContact(URL){
 }
 
 
-function emailTest(){
+function getEmail(){
     var ourRequest = new XMLHttpRequest();
     ourRequest.open('GET','https://testingauthentication-nf.azurewebsites.net//.auth/me');
     ourRequest.onload = function(){
