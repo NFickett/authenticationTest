@@ -67,9 +67,7 @@ function emailTest(){
     ourRequest.onload = function(){
         indexData = JSON.parse(ourRequest.responseText);
         console.log(indexData);
-        var indexString = "";
-        contactURLArray.length = 0;
-        document.getElementById("indexList").insertAdjacentHTML('beforeend', indexString);
+        document.getElementById("emailTest").insertAdjacentHTML('beforeend', indexData);
     };
     ourRequest.send();
 };
