@@ -66,7 +66,7 @@ function getEmail(){
     ourRequest.open('GET','https://testingauthentication-nf.azurewebsites.net//.auth/me');
     ourRequest.onload = function(){
         indexData = JSON.parse(ourRequest.responseText);
-        console.log(indexData);
+        console.log(indexData.user_id);
 
         document.getElementById("emailTest").insertAdjacentHTML('beforeend', indexData.user_id);
     };
