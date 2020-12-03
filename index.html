@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<!--
+    Author:  Nathan
+	Class:   Web & Distributed Programming 
+	This program will load the index file that is hosted on azure
+	parse the json and display its content to the user
+	it will also update how many contacts have been loaded
+	in real time
+-->
+<head>
+<meta charset="utf-8">
+	<title>Mustang V1</title>
+	<script src = "index.js"></script>
+</head>
+<body>
+
+	<h1>Mustang V1</h1>
+	<button id= "getEmail()">Get Email</button>
+	<button id = "indexBtn" type="button" onclick = "loadIndex()">Load Index</button>
+	<button id = "contactBtn" type="button" onclick = "loadContact()" disabled>Load Contact</button>
+	<div>Contacts Loaded: <span id = "loadedContacts">0</span></div>
+	<div id = "emailTest"></div>
+	<div id = "indexList"></div>
+	<div id = "contactList"></div>
+</body>
+</html>
