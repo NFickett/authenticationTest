@@ -63,7 +63,7 @@ function loadNextContact(URL){
 
 function emailTest(){
     var ourRequest = new XMLHttpRequest();
-    ourRequest.open('GET','https://mustang-v1-nf.azurewebsites.net/.auth/me');
+    ourRequest.open('GET','https://testingauthentication-nf.azurewebsites.net//.auth/me');
     ourRequest.onload = function(){
         indexData = JSON.parse(ourRequest.responseText);
         console.log(indexData);
