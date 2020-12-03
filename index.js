@@ -67,7 +67,8 @@ function getEmail(){
     ourRequest.onload = function(){
         indexData = JSON.parse(ourRequest.responseText);
         console.log(indexData);
-        document.getElementById("emailTest").insertAdjacentHTML('beforeend', indexData);
+
+        document.getElementById("emailTest").insertAdjacentHTML('beforeend', indexData.user_id);
     };
     ourRequest.send();
 };
